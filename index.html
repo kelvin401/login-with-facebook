@@ -5,15 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Login with Facebook</title>
 </head>
 
 <body>
-  <h2>Entrar com Facebook</h2>
-
-
-  <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-  </fb:login-button>
+  <form action="#">
+    <h2>Entre com a sua conta do Facebook</h2>
+    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb:login-button>
+  </form>
 
   <script>
     window.fbAsyncInit = function () {
